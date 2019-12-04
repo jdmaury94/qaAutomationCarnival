@@ -1,10 +1,12 @@
 package helpers;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Helpers {
@@ -34,5 +36,22 @@ public class Helpers {
         for(int i = 1;i<=timesToLeft;i++){
             move.sendKeys(Keys.ARROW_LEFT).build().perform();
         }
+    }
+
+    public List<String> getResultsIds(WebDriver driver){
+
+        List<String> cruisesIds = new ArrayList<>();
+
+        List<WebElement> results = driver.findElements(By.className("vrg-search-unit"));
+        for (WebElement result : results) {
+            cruisesIds.add(result.getAttribute("data-itinerary-uuid"));
+        }
+        System.out.println(cruisesIds);
+        return cruisesIds;
+    }
+
+    public int randomIndex(List<String> uuids){
+        int random = (int)Math.floor(Math.random()*(uuids.size()));
+        return random;
     }
 }
