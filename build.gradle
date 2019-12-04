@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'zemogaQA'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-java
+    compile group: 'io.cucumber', name: 'cucumber-java', version: '4.8.0'
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
+    testCompile group: 'io.cucumber', name: 'cucumber-junit', version: '4.8.0'
+    // https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting
+    // https://mvnrepository.com/artifact/de.monochromata.cucumber/reporting-plugin
+    compile group: 'de.monochromata.cucumber', name: 'reporting-plugin', version: '3.0.17'
+}
