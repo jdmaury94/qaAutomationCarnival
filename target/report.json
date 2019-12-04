@@ -1,0 +1,250 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-12-04T20:52:50.451Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1684095876,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Look for cruises to the Bahama of 6-9 days duration",
+        "description": "",
+        "id": "as-a-user-i-want-to-search-cruises-to-the-bahamas-with-duration-between-6-and-9-days-so-that-i-will;look-for-cruises-to-the-bahama-of-6-9-days-duration",
+        "after": [
+          {
+            "result": {
+              "duration": 398407607,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13076576684,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Using \"https://www.carnival.com/\" as main page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carnival.com/\"",
+                  "offset": 6
+                }
+              ],
+              "location": "StepsDefinition.using_as_main_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 730820863,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User search cruises to \"The Bahamas\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The Bahamas\"",
+                  "offset": 23
+                }
+              ],
+              "location": "StepsDefinition.user_search_cruises_to(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 627015700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Sets duration from 6 to 9 days",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 19
+                },
+                {
+                  "val": "9",
+                  "offset": 24
+                }
+              ],
+              "location": "StepsDefinition.sets_duration_from_to_days(Integer,Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27015374,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Results should be displayed on a grid",
+            "match": {
+              "location": "StepsDefinition.results_should_be_displayed_on_a_grid()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d78.0.3904.108)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027BLX-CO-jmaury.local\u0027, ip: \u0027fe80:0:0:0:848:9f50:df:e615%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.6\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/7f/q_y1jw9d1vv...}, goog:chromeOptions: {debuggerAddress: localhost:58360}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: a3026b36b95df19d6daaa07632095614\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat helpers.Helpers.sendKeysNTimes(Helpers.java:35)\n\tat pageobjects.HomePage.filterByPrice(HomePage.java:74)\n\tat steps.StepsDefinition.user_will_filter_by_price_from_to_using_slider_Bar(StepsDefinition.java:50)\n\tat ✽.User will filter by price from 480 to 700 using slider Bar(file:src/test/resources/features/SailsNavigation.feature:8)\n",
+              "duration": 969159941,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User will filter by price from 480 to 700 using slider Bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "480",
+                  "offset": 31
+                },
+                {
+                  "val": "700",
+                  "offset": 38
+                }
+              ],
+              "location": "StepsDefinition.user_will_filter_by_price_from_to_using_slider_Bar(int,int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 208566,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User will sort by price",
+            "match": {
+              "location": "StepsDefinition.user_will_sort_by_price()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-04T20:53:07.987Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1220593697,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Select a cruise",
+        "description": "",
+        "id": "as-a-user-i-want-to-search-cruises-to-the-bahamas-with-duration-between-6-and-9-days-so-that-i-will;select-a-cruise",
+        "after": [
+          {
+            "result": {
+              "duration": 401302845,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10980307596,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is in the results page \"https://www.carnival.com/#?dest\u003dbh\u0026layout\u003dgrid\u0026numAdults\u003d2\u0026pageNumber\u003d1\u0026pageSize\u003d8\u0026showBest\u003dtrue\u0026sort\u003dfromprice\u0026useSuggestions\u003dtrue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carnival.com/#?dest\u003dbh\u0026layout\u003dgrid\u0026numAdults\u003d2\u0026pageNumber\u003d1\u0026pageSize\u003d8\u0026showBest\u003dtrue\u0026sort\u003dfromprice\u0026useSuggestions\u003dtrue\"",
+                  "offset": 28
+                }
+              ],
+              "location": "StepsDefinition.user_is_in_the_results_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9840951096,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User selects a cruise",
+            "match": {
+              "location": "StepsDefinition.user_selects_a_cruise()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12209370,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Itinerary page should load",
+            "match": {
+              "location": "StepsDefinition.itinerary_page_should_load()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14302536202,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should be able to read about each day",
+            "match": {
+              "location": "StepsDefinition.user_should_be_able_to_read_about_each_day()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15244316,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "A book now button should be placed",
+            "match": {
+              "location": "StepsDefinition.a_book_now_button_should_be_placed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "As a user I want to search cruises to The Bahamas with duration between 6 and 9 days so that I will",
+    "description": "  visualize all the options to choose one.",
+    "id": "as-a-user-i-want-to-search-cruises-to-the-bahamas-with-duration-between-6-and-9-days-so-that-i-will",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SailsNavigation.feature",
+    "tags": []
+  }
+]
